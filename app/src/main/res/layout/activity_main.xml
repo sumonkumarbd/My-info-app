@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_design"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180dp"
+        android:background="@drawable/header_part">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_25dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/_80dp"
+            android:layout_height="@dimen/_80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_3dp"
+            android:layout_marginTop="@dimen/_210dp"
+            android:elevation="@dimen/_4dp"
+            android:src="@drawable/c_shape" />
+
+        <ImageView
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="@dimen/_70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_280dp"
+            android:layout_marginEnd="@dimen/_minus_8dp"
+            android:elevation="@dimen/_4dp"
+            android:src="@drawable/top_right_shape" />
+
+        <ImageView
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="@dimen/_70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_minus_10dp"
+            android:layout_marginBottom="@dimen/_100dp"
+            android:elevation="@dimen/_4dp"
+            android:src="@drawable/bottom_left_shape" />
+
+        <ImageView
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="@dimen/_70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_minus_25dp"
+            android:elevation="@dimen/_4dp"
+            android:src="@drawable/bottom_shape" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_design"
+        android:layout_marginHorizontal="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:background="@drawable/edit_text_shape"
+            android:drawableLeft="@drawable/person_pin_24"
+            android:drawableRight="@drawable/edit_note_24_deactive"
+            android:gravity="center"
+            android:hint="Type your name..."
+            android:paddingHorizontal="@dimen/_5dp"
+            android:textColorHint="@color/sec_color"
+            android:textSize="@dimen/_12sp" />
+
+        <EditText
+            android:id="@+id/edAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/edit_text_shape"
+            android:drawableLeft="@drawable/round_warehouse_24"
+            android:drawableRight="@drawable/edit_note_24_deactive"
+            android:gravity="center"
+            android:hint="Type your address..."
+            android:paddingHorizontal="@dimen/_5dp"
+            android:textColorHint="@color/sec_color"
+            android:textSize="@dimen/_12sp" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/edit_text_shape"
+            android:drawableLeft="@drawable/round_mail_lock_24"
+            android:drawableRight="@drawable/edit_note_24_deactive"
+            android:gravity="center"
+            android:hint="Type your email..."
+            android:paddingHorizontal="@dimen/_5dp"
+            android:textColorHint="@color/sec_color"
+            android:textSize="@dimen/_12sp" />
+
+        <EditText
+            android:id="@+id/edMobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/edit_text_shape"
+            android:drawableLeft="@drawable/round_phone_enabled_24"
+            android:drawableRight="@drawable/edit_note_24_deactive"
+            android:gravity="center"
+            android:hint="Type your mobile no..."
+            android:paddingHorizontal="@dimen/_5dp"
+            android:textColorHint="@color/sec_color"
+            android:textSize="@dimen/_12sp" />
+
+        <EditText
+            android:id="@+id/edBloodG"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/edit_text_shape"
+            android:drawableLeft="@drawable/round_bloodtype_24"
+            android:drawableRight="@drawable/edit_note_24_deactive"
+            android:gravity="center"
+            android:hint="Type your blood group..."
+            android:paddingHorizontal="@dimen/_5dp"
+            android:textColorHint="@color/sec_color"
+            android:textSize="@dimen/_12sp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_5dp"
+            android:text="Save information"
+            android:textSize="@dimen/_15sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
