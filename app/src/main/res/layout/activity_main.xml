@@ -150,6 +150,7 @@
             android:layout_marginTop="@dimen/_10dp"
             android:background="@drawable/btn_shape"
             android:gravity="center"
+            android:clickable="true"
             android:paddingHorizontal="@dimen/_5dp"
             android:text="Save information"
             android:textSize="@dimen/_15sp" />
